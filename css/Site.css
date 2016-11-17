@@ -20,6 +20,12 @@
 	background-color: white;
 }
 
+.footer{
+	text-align: left;
+	font-size: 15px;
+	padding-left: 10px;
+}
+
 .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
     background-color: #00BFFF;
 }
