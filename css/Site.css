@@ -7,8 +7,10 @@
 	color: black;
 }
 .jumbotron{
-	height: 100vh;
 	background: url('../Images/Me.JPG');
+    height: 100vh;
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 #Daniel{
 	color: black;
@@ -18,14 +20,6 @@
 	background-color: white;
 }
 
-
-
-:hov
-
-.cls
-
-element.style {
-}
 .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
     background-color: #00BFFF;
 }
