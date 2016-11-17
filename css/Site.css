@@ -1,0 +1,19 @@
+.nav.navbar-nav li a {
+	color: black;
+	hover: black;
+}
+.nav.navbar-nav li a:hover{
+	background-color: #00BFFF;
+	color: black;
+}
+.jumbotron{
+	height: 100vh;
+	background: url('Images/Me.JPG');
+}
+#Daniel{
+	color: black;
+}
+#nn {
+	border-color: white;
+	background-color: white;
+}
