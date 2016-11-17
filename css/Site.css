@@ -8,7 +8,7 @@
 }
 .jumbotron{
 	height: 100vh;
-	background: url('../../Images/Me.JPG');
+	background: url('../Images/Me.JPG');
 }
 #Daniel{
 	color: black;
