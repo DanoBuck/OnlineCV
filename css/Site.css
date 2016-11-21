@@ -48,6 +48,32 @@
     border-radius: 4px;
 }
 
+#Home {
+	height: 100vh;
+	background-color: #00BFFF;
+	background-size: cover;
+    background-position: top center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+#AboutMe {
+	height: 100vh;
+	background-size: cover;
+    background-position: top center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+#CurriculumVitae {
+	height: 100vh;
+	background-color: #00BFFF;
+	background-size: cover;
+    background-position: top center;
+    text-align: center;
+    padding: 0 20px;
+}
+
 .footer{
 	text-align: left;
 	font-size: 15px;
