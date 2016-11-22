@@ -74,6 +74,13 @@
     padding: 0 20px;
 }
 
+#Subjects {
+	height: 100vh;
+	background-size: cover;
+    background-position: top center;
+    padding: 0 20px;
+}
+
 .footer{
 	text-align: left;
 	font-size: 15px;
@@ -94,4 +101,15 @@ html .fixedFooter {
     font-size: 12px;
     color: white;
 }
+
+  .btn:after {
+    font-family: "Glyphicons Halflings";
+    content: "\e114";
+    float: right;
+    margin-left: 15px;
+  }
+  /* Icon when the collapsible content is hidden */
+  .btn.collapsed:after {
+    content: "\e080";
+  }
 
