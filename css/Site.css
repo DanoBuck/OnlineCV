@@ -49,7 +49,7 @@
 }
 
 #Home {
-	height: 100vh;
+	min-height: 100vh;
 	background-color: #00BFFF;
 	background-size: cover;
     background-position: top center;
@@ -58,15 +58,26 @@
 }
 
 #Languages {
-	height: 100vh;
+	min-height: 100vh;
 	background-size: cover;
     background-position: top center;
     text-align: center;
     padding: 0 20px;
 }
 
+article, aside, figure, footer, header, hgroup, nav, section {
+    display: block;
+	margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: 0 0;
+}
+
 #CurriculumVitae {
-	height: 100vh;
+	min-height: 100vh;
 	background-color: #00BFFF;
 	background-size: cover;
     background-position: top center;
@@ -75,7 +86,7 @@
 }
 
 #Subjects {
-	height: 100vh;
+	min-height: 100vh;
 	background-size: cover;
     background-position: top center;
     padding: 0 20px;
