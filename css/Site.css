@@ -46,7 +46,7 @@
     border-radius: 4px;
 }
 
-#Home {
+#Experience {
 	min-height: 100vh;
 	background-color: #00BFFF;
 	background-size: cover;
@@ -74,8 +74,8 @@ article, aside, figure, footer, header, hgroup, nav, section {
     background: 0 0;
 }
 
-#CurriculumVitae {
-	min-height: 100vh;
+#IDES {
+	min-height: 60vh;
 	background-color: #00BFFF;
 	background-size: cover;
     background-position: top center;
