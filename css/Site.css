@@ -124,4 +124,12 @@ html .fixedFooter {
   #grades.btn.collapsed:after {
     content: "\e080";
   }
+  
+   .thumbnail > a {
+    display: block;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 266px;
+}
 
