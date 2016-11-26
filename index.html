@@ -30,6 +30,7 @@
 			  <li><a href="#Languages">Languages</a></li>
 			  <li><a href="#IDES">IDES</a></li>
 			  <li><a href="#Subjects">Subjects</a></li>
+			  <li><a href="#Location">Location</a></li>
 			</ul>
 		  </div>
 		</div>
@@ -47,6 +48,7 @@
 					<h1 style="letter-spacing: 10px; font-family: 'Raleway';">Daniel David Buckley</h1>
 					<h2 style="letter-spacing: 10px; font-family: 'Raleway';É">Software Developer</h2>
 					<h3 style="letter-spacing: 10px; font-family: 'Raleway';É">IT Tallaght</h2>
+								<button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Contact Me</button>
 				</div>
 			</div>
 		</div>
@@ -231,6 +233,12 @@
 		</div>
 	</section>
 	
+	<section id="Location">
+		<h1>Location</h1>
+		<!-- Add Google Maps -->
+		<div id="googleMap"></div>
+	</section>
+	
 	<!-- FOOTER -->
 	<div id="clearfooter"></div>
 	<div class="fixedFooter">
@@ -241,6 +249,9 @@
 </body>
 	<!-- Angular CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"> </script>
+	<!-- Google Map API -->
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script src="js/googleMap.js"></script>
 	<script src="js/email.js"></script>
 	<script src="js/subjectResults.js"></script>
 </html>

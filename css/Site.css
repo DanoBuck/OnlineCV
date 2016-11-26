@@ -123,6 +123,21 @@ html .fixedFooter {
     color: white;
 }
 
+#Location {
+	min-height: 70vh;
+	background-size: cover;
+    background-position: top center;
+    padding: 0 20px;
+	text-align: center;
+}
+
+#googleMap
+{
+	height:400px;
+	filter:grayscale(10%);
+	-webkit-filter:grayscale(10%);
+}
+
 #clearfooter {
 	height: 50px;
 }
