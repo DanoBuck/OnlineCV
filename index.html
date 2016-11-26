@@ -49,84 +49,161 @@
 					<h1 style="letter-spacing: 10px; font-family: 'Raleway';">Daniel David Buckley</h1>
 					<h2 style="letter-spacing: 10px; font-family: 'Raleway';É">Software Developer</h2>
 					<h3 style="letter-spacing: 10px; font-family: 'Raleway';É">IT Tallaght</h2>
-					<button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Contact Me</button>
+					<button type="button" class="btn btn-info" data-toggle="modal" data-target="#contactMeModal">Contact Me</button>
 				</div>
 			</div>
 		</div>
 	</section>
 	
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Contact Me</h4>
-        </div>
-        <div class="modal-body">
-          <form id="sendMessage">
-			<div class="form-group">
-			  <label for="firstName">First Name</label>
-			  <input type="text" class="form-control" id="firstName">
+	<div class="modal fade" id="contactMeModal" role="dialog">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <button type="button" class="close" data-dismiss="modal">&times;</button>
+			  <h4 class="modal-title">Contact Me</h4>
 			</div>
-			<div class="form-group">
-			  <label for="lastName">Last Name</label>
-			  <input type="text" class="form-control" id="lastName">
+			<div class="modal-body">
+			  <form id="sendMessage">
+				<div class="form-group">
+				  <label for="firstName">First Name</label>
+				  <input type="text" class="form-control" id="firstName">
+				</div>
+				<div class="form-group">
+				  <label for="lastName">Last Name</label>
+				  <input type="text" class="form-control" id="lastName">
+				</div>
+				<div class="form-group">
+				  <label for="phoneNumber">Phone Number</label>
+				  <input type="text" class="form-control" id="phoneNumber">
+				</div>
+				<div class="form-group">
+				  <label for="email">Email</label>
+				  <input type="email" class="form-control" id="email">
+				</div>
+				<div class="form-group">
+				  <label for="message">Message</label>
+				  <textarea type="message-box" class="form-control" rows="5" id="message"></textarea>
+				</div>
+			  </form>
 			</div>
-			<div class="form-group">
-			  <label for="phoneNumber">Phone Number</label>
-			  <input type="text" class="form-control" id="phoneNumber">
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			  <button type="button" id="sendEmail" class="btn btn-info" data-dismiss="modal">Send Message</button>
 			</div>
-			<div class="form-group">
-			  <label for="email">Email</label>
-			  <input type="email" class="form-control" id="email">
-			</div>
-			<div class="form-group">
-			  <label for="message">Message</label>
-			  <textarea type="message-box" class="form-control" rows="5" id="message"></textarea>
-			</div>
-		  </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-		  <button type="button" id="sendEmail" class="btn btn-info" data-dismiss="modal">Send Message</button>
-        </div>
-      </div>
-    </div>
-  </div>
+		  </div>
+		</div>
+	</div>
   
 	<section id="Experience">
 		<h1>Experiences<h1>
-<!-- 		<div class="col-sm-6">
-			<img style="float: left;" src="Images/Experience/SureDatum.jpg" alt="SureDatum Logo"/>
-		</div>
-		<div class="col-sm-6">
-			<img src="Images/Experience/DSP.png" alt="The Department of Social Protection Logo" style="width: 400px; height: 200px;"/>
-		</div> -->
-		
 		<div class="experience-row-padding experience-padding-32" style="margin:0 -16px">
-		<div class="experienceSection margin-bottom">
-		  <img src="Images/Experience/SureDatum.JPG" alt="SureDatum Logo" style="width:100%" class="w3-hover-opacity">
-			<p style="font-size: 20px;"><b>SureDatum</b></p>
-			<p style="font-size: 20px;">Software Developer</p>
-			<p class="opacity" style="font-size: 20px;">August 2016 - Present</p>
-			<button class="btn btn-info">More Info</button>
+			<div class="experienceSection margin-bottom">
+			  <img src="Images/Experience/SureDatum.JPG" alt="SureDatum Logo" style="width:100%" class="w3-hover-opacity">
+				<p style="font-size: 20px;"><b>SureDatum</b></p>
+				<p style="font-size: 20px;">Software Developer</p>
+				<p class="opacity" style="font-size: 20px;">August 2016 - Present</p>
+				<button type="button" class="btn btn-info" data-toggle="modal" data-target="#sureDatumModal">More Info</button>
+			</div>
+			<div class="experienceSection margin-bottom">
+			  <img src="Images/Experience/DSP.png" alt="The Department of Social Protection Logo" style="width:100%" class="w3-hover-opacity">
+				<p style="font-size: 20px;"><b>The Department of Social Protection</b></p>
+				<p style="font-size: 20px;">BOMi Software Developer</p>
+				<p class="opacity" style="font-size: 20px;">January 2016 - July 2016</p>
+				<button type="button" class="btn btn-info" data-toggle="modal" data-target="#DSPModal">More Info</button>
+			</div>
+			<div class="experienceSection margin-bottom">
+			  <img src="Images/Experience/DDSL.jpg" alt="DDSL Logo" style="width:40%" class="w3-hover-opacity">
+				<p style="font-size: 20px;"><b>DDSL</b></p>
+				<p style="font-size: 20px;">Referee</p>
+				<p class="opacity" style="font-size: 20px;">September 2012 - February 2016</p>
+				<button type="button" class="btn btn-info" data-toggle="modal" data-target="#DDSLModal">More Info</button>
+			</div>
 		</div>
-		<div class="experienceSection margin-bottom">
-		  <img src="Images/Experience/DSP.png" alt="The Department of Social Protection Logo" style="width:100%" class="w3-hover-opacity">
-			<p style="font-size: 20px;"><b>The Department of Social Protection</b></p>
-			<p style="font-size: 20px;">BOMi Software Developer</p>
-			<p class="opacity" style="font-size: 20px;">January 2016 - July 2016</p>
-			<button class="btn btn-info">More Info</button>
-		</div>
-		<div class="experienceSection margin-bottom">
-		  <img src="Images/Experience/DDSL.jpg" alt="DDSL Logo" style="width:40%" class="w3-hover-opacity">
-			<p style="font-size: 20px;"><b>DDSL</b></p>
-			<p style="font-size: 20px;">Referee</p>
-			<p class="opacity" style="font-size: 20px;">September 2012 - February 2016</p>
-			<button class="btn btn-info">More Info</button>
-		</div>
-      </div>
 	</section>
+	
+	<div class="modal fade" id="sureDatumModal" role="dialog">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+			<div class="modal-header"style="text-align: center;">
+			  <button type="button" class="close" data-dismiss="modal">&times;</button>
+			  <h4 class="modal-title"><b>SureDatum Continued</b></h4>
+			  <img src="Images/Experience/SureDatum.JPG" alt="SureDatum Logo"/>
+			</div>
+			<div class="modal-body">
+				<p>I received a position as an intern with SureDatum after leaving the Department of Social Protection. Working here part-time as well as going to college. 
+					While here I have been working on multiple projects for different clients which enable companies to reduce and control software license costs. 
+					I have been exposed to Scala, Java, AngularJS, JUnit, Mockito, and many more.
+					We use Test Driven Development as part of our agile philosophy while completing our projects.</p>
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		  </div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="DSPModal" role="dialog">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+			<div class="modal-header" style="text-align: center;">
+			  <button type="button" class="close" data-dismiss="modal">&times;</button>
+			  <h4 class="modal-title"><b>The Department of Social Protection Continued</b></h4>
+			  <img src="Images/Experience/DSP.png" alt="The Department of Social Protection Logo" style="width:100%"/>
+			</div>
+			<div class="modal-body">
+				<p>As part of Semester 6 in college, we had to gain a 6 month internship. I gained my internship with the Department of Social Protection.
+				In this internship I worked as part of an Agile Team made up of 10 experienced software developers. 
+				When I arrived the project was still in the early stages of development. This meant I would be given a lot of analysis work to complete which gave me a great insight on how to write the code. 
+				This was challenging at the start but by the end of the internship, I had developed these skills greatly. 
+				Other skills I gained was having the ability of working on a huge system which so many people depend on for their day-to-day life. 
+				At first,  I found the system quite daunting as it was something I had never seen before in my college work. 
+				This internship improved my development skills substantially and I am very thankful to have been given this chance.</p>
+				</br>
+				<p>
+					My main responsibilities were: 
+					<ul>
+						<li>
+							Unit Testing - This was a new skill I picked up here. 
+							I found it difficult at the start but it became second nature to me after a bit of guidance from a consultant. 
+							I used NCrunch which helped me with unit testing immensely as it showed me where I was going wrong and would display subtle hints to why I was going wrong.
+						</li>
+						<li>
+							Development Code - Towards the last few weeks in the internship, I was given a task to do.
+							This task was to find and fix where a problem was arising in the code.
+						</li>
+						<li>
+							Debugging - When discrepancies occurred in the output and we were unsure, my job was to find why this is happening and then report them to the person who coded this.
+						</li>
+						<li>
+							Analysis - Analysing documents wrote by the business users to identify tasks for the team.
+						</li>
+					</ul>
+				</p>
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		  </div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="DDSLModal" role="dialog">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+			<div class="modal-header" style="text-align: center;">
+			  <button type="button" class="close" data-dismiss="modal">&times;</button>
+			  <h4 class="modal-title"><b>DDSL Continued</b></h4>
+			  <img src="Images/Experience/DDSL.jpg" alt="DDSL Logo" style="width:40%">
+			</div>
+			<div class="modal-body">
+				<p></p>
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		  </div>
+		</div>
+	</div>
 	
 	<section id="Projects">
 		<h1>Projects<h1>
@@ -199,7 +276,7 @@
 				</table>
 			</div>
 			<div class="col-sm-3">
-			<button type="button" class="btn btn-lg btn-info collapsed" id="grades" data-toggle="collapse" data-target="#ThridYear">Third Year</button>
+				<button type="button" class="btn btn-lg btn-info collapsed" id="grades" data-toggle="collapse" data-target="#ThridYear">Third Year</button>
 			</div>
 			<div id="ThridYear" class="collapse">
 				<h4>GPA: 3.25 / 4.0</h4>
@@ -219,7 +296,7 @@
 				</table>
 			</div>
 			<div class="col-sm-3">
-			<button type="button" class="btn btn-lg btn-info collapsed" id="grades" data-toggle="collapse" data-target="#SecondYear">Second Year</button>
+				<button type="button" class="btn btn-lg btn-info collapsed" id="grades" data-toggle="collapse" data-target="#SecondYear">Second Year</button>
 			</div>
 			<div id="SecondYear" class="collapse">
 				<h4>GPA: 3.29 / 4.0</h4>
@@ -239,7 +316,7 @@
 				</table>
 			</div>
 			<div class="col-sm-3">
-			<button type="button" class="btn btn-lg btn-info collapsed" id="grades" data-toggle="collapse" data-target="#FirstYear">First Year</button>
+				<button type="button" class="btn btn-lg btn-info collapsed" id="grades" data-toggle="collapse" data-target="#FirstYear">First Year</button>
 			</div>
 			<div id="FirstYear" class="collapse">
 				<h4>GPA: 2.98 / 4.0</h4>
