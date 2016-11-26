@@ -36,12 +36,28 @@
 	  </div>
 	</nav>
 	
-	<div class="jumbotron" style="background-position: 50% 0px;">
+	<section id="Hero">
+		<div class="container">
+			<div id="clearHeader"></div>
+			<div class="row">
+				<div class="col-sm-6">
+					<img src="Images/Myself.jpg" class="img-responsive img-rounded" alt="Picture of Myself" style="padding-bottom: 30px;" width="304" height="236"/> 
+				</div>
+				<div class="col-sm-6" style="text-align: left; color: black;">
+					<h1 style="letter-spacing: 10px; font-family: 'Raleway';">Daniel David Buckley</h1>
+					<h2 style="letter-spacing: 10px; font-family: 'Raleway';É">Software Developer</h2>
+					<h3 style="letter-spacing: 10px; font-family: 'Raleway';É">IT Tallaght</h2>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+<!-- 	<div class="jumbotron" style="background-position: 50% 0px;">
       <div class="container">
 			<h1 style="text-align: left; color: white;">Daniel Buckley</h1>
 			<button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Contact Me</button>
 		</div>
-	</div>
+	</div> -->
 	
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
@@ -84,17 +100,6 @@
   
 	<section id="Experience">
 		<h1>Experiences<h1>
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-6">
-					<img src="Images/Myself.jpg" class="img-responsive img-rounded" alt="Picture of Myself" style="padding-bottom: 30px;" width="304" height="236"/> 
-				</div>
-				<div class="col-sm-6" style="text-align: left; color: white;">
-					<h1 style="letter-spacing: 10px; font-family: 'Raleway';">Daniel David Buckley</h1>
-					<h2 style="letter-spacing: 10px; font-family: 'Raleway';">Software Developer</h2>
-				</div>
-			</div>
-		</div>
 	</section>
 
 	<section id="Languages">
@@ -142,7 +147,7 @@
 	
 	<section id="Subjects">
 		<h1 style="text-align: center;">Subjects</h1>
-		<div class="container">
+		<div class="container" ng-app="education" ng-controller="educationController">
 			<div class="col-sm-3">
 				<button type="button" class="btn btn-lg btn-info collapsed" id="grades" data-toggle="collapse" data-target="#FourthYear">Fourth Year</button>
 			</div>
@@ -155,31 +160,11 @@
 						<th>Grade</th>
 					  </tr>
 					</thead>
-					<tbody>
-					  <tr>
-						<td>Enterprise Application Development 1</td>
-						<td>TBC</td>
-					  </tr>
-					  <tr>
-						<td>Enterprise Application Architecture</td>
-						<td>TBC</td>
-					  </tr>
-					  <tr>
-						<td>Interactive Media Design 1</td>
-						<td>TBC</td>
-					  </tr>
-					  <tr>
-						<td>Social Media Analysis</td>
-						<td>TBC</td>
-					  </tr>
-					  <tr>
-						<td>Information Management</td>
-						<td>TBC</td>
-					  </tr>
-					  <tr>
-						<td>Project</td>
-						<td>TBC</td>
-					  </tr>			  
+					<tbody ng-repeat="fy in education.fourthYear">
+						<tr>
+							<td>{{fy.subject}}</td>
+							<td>{{fy.grade}}</td>
+						</tr>	  
 					</tbody>
 				</table>
 			</div>
@@ -196,38 +181,10 @@
 					  </tr>
 					</thead>
 					<tbody>
-					  <tr>
-						<td>Algorithms and Data Structures 1</td>
-						<td>B+</td>
-					  </tr>
-					  <tr>
-						<td>Advanced Database</td>
-						<td>B+</td>
-					  </tr>
-					  <tr>
-						<td>Industry Project</td>
-						<td>B+</td>
-					  </tr>
-					  <tr>
-						<td>Web Design & Development 2</td>
-						<td>B+</td>
-					  </tr>
-					  <tr>
-						<td>Operating Systems</td>
-						<td>B</td>
-					  </tr>
-					  <tr>
-						<td>Innovation & Entrepreneurship</td>
-						<td>B</td>
-					  </tr>
-					  <tr>
-						<td>Cloud Services & Distributed Computing</td>
-						<td>B-</td>
-					  </tr>
-					  <tr>
-						<td>Work Placement</td>
-						<td>PASS</td>
-					  </tr>				  
+					  <tr ng-repeat="ty in education.thirdYear">
+							<td>{{ty.subject}}</td>
+							<td>{{ty.grade}}</td>
+					  </tr>			  
 					</tbody>
 				</table>
 			</div>
@@ -244,50 +201,10 @@
 					  </tr>
 					</thead>
 					<tbody>
-					  <tr>
-						<td>Management Science</td>
-						<td>A</td>
-					  </tr>
-					  <tr>
-						<td>Discrete Mathematics</td>
-						<td>A</td>
-					  </tr>
-					  <tr>
-						<td>Networking 2</td>
-						<td>A</td>
-					  </tr>
-					  <tr>
-						<td>Networking 1</td>
-						<td>B+</td>
-					  </tr>
-					  <tr>
-						<td>Software Quality Assurance & Testing</td>
-						<td>B+</td>
-					  </tr>
-					  <tr>
-						<td>Software Development 4</td>
-						<td>B+</td>
-					  </tr>
-					  <tr>
-						<td>Software Development 3</td>
-						<td>B</td>
-					  </tr>
-					  <tr>
-						<td>Project</td>
-						<td>B</td>
-					  </tr>
-					  <tr>
-						<td>Database Design & Programming</td>
-						<td>B</td>
-					  </tr>
-					  <tr>
-						<td>Web Design & Development 1</td>
-						<td>B</td>
-					  </tr>
-					  <tr>
-						<td>Object Oriented Analysis & Design</td>
-						<td>C</td>
-					  </tr>					  
+					  <tr ng-repeat="sy in education.secondYear">
+							<td>{{sy.subject}}</td>
+							<td>{{sy.grade}}</td>
+					  </tr>				  
 					</tbody>
 				</table>
 			</div>
@@ -304,50 +221,10 @@
 					  </tr>
 					</thead>
 					<tbody>
-					  <tr>
-						<td>Social Media Communication's</td>
-						<td>A</td>
-					  </tr>
-					  <tr>
-						<td>Software Development 2</td>
-						<td>A</td>
-					  </tr>
-					  <tr>
-						<td>Software Development 1</td>
-						<td>B+</td>
-					  </tr>
-					  <tr>
-						<td>Discrete Mathematics 1</td>
-						<td>B</td>
-					  </tr>
-					  <tr>
-						<td>Statistics </td>
-						<td>B</td>
-					  </tr>
-					  <tr>
-						<td>Computer Architecture</td>
-						<td>B</td>
-					  </tr>
-					  <tr>
-						<td>Object Oriented System Analysis</td>
-						<td>B</td>
-					  </tr>
-					  <tr>
-						<td>Learning to Learn at 3rd Level</td>
-						<td>B-</td>
-					  </tr>
-					  <tr>
-						<td>Operating Systems Fundamentals</td>
-						<td>C</td>
-					  </tr>
-					  <tr>
-						<td>Business & Information Systems</td>
-						<td>C</td>
-					  </tr>
-					  <tr>
-						<td>Fundamentals of Interface and Web Design</td>
-						<td>C</td>
-					  </tr>					  
+					  <tr ng-repeat="fy in education.firstYear">
+							<td>{{fy.subject}}</td>
+							<td>{{fy.grade}}</td>
+					  </tr>				  
 					</tbody>
 				</table>
 			</div>
@@ -362,5 +239,8 @@
 		</div>
 	</div>
 </body>
+	<!-- Angular CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"> </script>
 	<script src="js/email.js"></script>
+	<script src="js/subjectResults.js"></script>
 </html>

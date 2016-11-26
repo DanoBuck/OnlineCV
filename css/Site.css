@@ -1,3 +1,7 @@
+#clearHeader {
+	height: 80px;
+}
+
 .nav.navbar-nav li a {
 	color: black;
 	hover: black;
@@ -44,6 +48,15 @@
     background-image: none;
     border: 1px solid transparent;
     border-radius: 4px;
+}
+
+#Hero {
+	background-image: url('../Images/Background.jpeg');
+	min-height: 80vh;
+	background-size: cover;
+    background-position: top center;
+    text-align: center;
+    padding: 0 20px;
 }
 
 #Experience {
