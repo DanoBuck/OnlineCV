@@ -26,12 +26,12 @@
 		<div>
 		  <div class="collapse navbar-collapse" id="myNavbar">
 			<ul class="nav navbar-nav navbar-right">
-			  <li><a href="#Experience">Experience</a></li>
-			  <li><a href="#Projects">Projects</a></li>
-			  <li><a href="#Languages">Languages</a></li>
-			  <li><a href="#IDES">IDES</a></li>
-			  <li><a href="#Education">Education</a></li>
-			  <li><a href="#Location">Location</a></li>
+			  <li><a class="scrollable" href="#Experience">Experience</a></li>
+			  <li><a class="scrollable" href="#Projects">Projects</a></li>
+			  <li><a class="scrollable" href="#Languages">Languages</a></li>
+			  <li><a class="scrollable" href="#IDES">IDES</a></li>
+			  <li><a class="scrollable" href="#Education">Education</a></li>
+			  <li><a class="scrollable" href="#Location">Location</a></li>
 <!-- 			  <li><a href="DanielDavidBuckleyCuriculumVitae.pdf">CV</a></li> -->
 			</ul>
 		  </div>
@@ -243,8 +243,59 @@
 	
 	<section id="Projects">
 		<div id="clearfooter"></div>
-		<h1>Projects<h1>
+		<div class="col-sm-4">
+			<h2>Projects</h2>
+			<ul class="nav nav-pills nav-stacked">
+				<li style="padding-top: 30px;"><a data-toggle="pill" href="#fourthYearProject">Fourth Year</a></li>
+				<li style="padding-top: 30px;"><a data-toggle="pill" href="#thirdYearProject">Third Year</a></li>
+				<li style="padding-top: 30px;"><a data-toggle="pill" href="#secondYearProject">Second Year</a></li>
+				<li style="padding-top: 30px;"><a data-toggle="pill" href="#firstYearProject">First Year</a></li>
+			</ul>
+		</div>
+		<div class="container">
+			<div class="col-sm-8">
+				<div class="tab-content">
+					<div id="fourthYearProject" class="tab-pane fade in active">
+						<h2>Fourth Year Project</h2>
+						<img src="Images/Projects/IBM.png"/>
+						<h3>GitHub Usability Browser Extension</h3>
+						<button type="button" class="btn btn-info" data-toggle="modal" data-target="#IBMProjectModal">More Info</button>
+					</div>
+					<div id="thirdYearProject" class="tab-pane fade">
+						<h2>Third Year Industry Project</h2>
+						<p></p>
+					</div>
+					<div id="secondYearProject" class="tab-pane fade">
+						<h2>Second Year Project</h2>
+						<p></p>
+					</div>
+					<div id="firstYearProject" class="tab-pane fade">
+						<h2>First Year Project</h2>
+						<p></p>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
+	
+	<div class="modal fade" id="IBMProjectModal" role="dialog">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+			<div class="modal-header"style="text-align: center;">
+			  <button type="button" class="close" data-dismiss="modal">&times;</button>
+			  <img src="Images/Projects/IBM.png" alt="IBM Logo" style="padding-top: 30px;"/>
+			</div>
+			<div class="modal-body">
+				<h3 style="text-align: center;">GitHub Usability Browser Extension</h3>
+				<img src="Images/Projects/GitHubBrowserExtension.jpg" alt="Fourth Year Project Built on top of GitHub" style="padding-top: 30px; align: center;"/>
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		  </div>
+		</div>
+		<div id="clearfooter"></div>
+	</div>
 
 	<section id="Languages">
 		<div id="clearfooter"></div>
@@ -408,7 +459,7 @@
 	<script>
 		<!-- JQuery for page scrolling -->
 		$(document).ready(function(){
-			  $("a").on('click', function(event) {
+			  $(".scrollable").on('click', function(event) {
 
 				if (this.hash !== "") {
 				  event.preventDefault();
