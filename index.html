@@ -32,6 +32,7 @@
 			  <li><a href="#IDES">IDES</a></li>
 			  <li><a href="#Education">Education</a></li>
 			  <li><a href="#Location">Location</a></li>
+			  <li><a href="DanielDavidBuckleyCuriculumVitae.pdf">CV</a></li>
 			</ul>
 		  </div>
 		</div>
@@ -50,6 +51,7 @@
 					<h2 style="letter-spacing: 10px; font-family: 'Raleway';É">Software Developer</h2>
 					<h3 style="letter-spacing: 10px; font-family: 'Raleway';É">IT Tallaght</h2>
 					<button type="button" class="btn btn-info" data-toggle="modal" data-target="#contactMeModal">Contact Me</button>
+					<a href="DanielDavidBuckleyCuriculumVitae.pdf"><button type="button" class="btn btn-info">Download C.V.</button></a>
 				</div>
 			</div>
 		</div>
@@ -416,6 +418,19 @@
 				  });
 				}
 			  });
+			});
+	</script>
+	<script>
+		$(function() {
+
+			   $("body").mousewheel(function(event, delta) {
+
+				  this.scrollLeft -= (delta * 30);
+				
+				  event.preventDefault();
+
+			   });
+
 			});
 	</script>
 </html>
