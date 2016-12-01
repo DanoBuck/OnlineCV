@@ -69,6 +69,7 @@
 
 #Projects {
 	min-height: 100vh;
+	background-color: white;
 	background-size: cover;
     background-position: top center;
     text-align: center;
