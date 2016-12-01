@@ -396,5 +396,25 @@
 	<!-- Custom Scripts -->
 	<script src="js/googleMap.js"></script>
 	<script src="js/email.js"></script>
-	<script src="js/subjectResults.js"></script>
+	<script>
+		<!-- JQuery for page scrolling -->
+		$(document).ready(function(){
+			  $("a").on('click', function(event) {
+
+				if (this.hash !== "") {
+				  event.preventDefault();
+
+				  // Store hash
+				  var hash = this.hash;
+
+				  $('html, body').animate({
+					scrollTop: $(hash).offset().top
+				  }, 800, function(){
+			   
+					window.location.hash = hash;
+				  });
+				}
+			  });
+			});
+	</script>
 </html>
