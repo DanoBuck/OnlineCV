@@ -248,7 +248,6 @@
 				<li style="padding-top: 30px;"><a data-toggle="pill" href="#fourthYearProject">Fourth Year</a></li>
 				<li style="padding-top: 30px;"><a data-toggle="pill" href="#thirdYearProject">Third Year</a></li>
 				<li style="padding-top: 30px;"><a data-toggle="pill" href="#secondYearProject">Second Year</a></li>
-				<li style="padding-top: 30px;"><a data-toggle="pill" href="#firstYearProject">First Year</a></li>
 			</ul>
 		</div>
 		<div class="container">
@@ -324,10 +323,31 @@
 			<div class="modal-body">
 				<h3 style="text-align: center;">Penalty Points in Ireland</h3>
 				<div id="CenteredDiv" style="text-align: center;">
-					<!-- <img src="Images/Projects/GitHubBrowserExtension.JPG" alt="Fourth Year Project Built on top of GitHub" style="padding-top: 30px; max-width: 80%;"/> -->
+					<img src="Images/Projects/PenaltyPoints.png" alt="Penalty Point Visualisations" style="padding-top: 30px; max-width: 100%;"/>
 				</div>
 				<h4><b>Project Summary</b></h4>
 				<p>
+					To complete this project, I gained data from the Road Safety Authority. I got all the data of types of offences and how many penalty
+					points were issued for a particular month for those offences. The data contained all statistics for each county in the Republic of
+					Ireland.
+				</p>
+				</br>
+				<p>
+					When I first gained the data it was in a real mess. I was not able to import it straight into Tableau. I needed to clean up the data.
+					To do this I wrote a series of scripts in C# to help me to clean this. The script was hard work but after some time well spent I had
+					a much better way of cleaning it rather than trying to do it manually. After these scripts were ran, the data was now ready to be imported
+					into Tableau.
+				</p>
+				</br>
+				<p>
+					After this, I made my visualisations which can be seen at the top of this section. These visualisations show the offences by counties
+					on a map. Each county is broken down into a percentage to give the user a better idea of what counties are worst. The worst the county is,
+					the darker shade of blue it gets. The bar chart underneath the map shows the penalty point break down by offence and county. This is linked
+					to the map and filters accordingly with what is selected.
+				</p>
+				</br>
+				<p>
+					All the code and visualisations live in a repository on GitHub. These can be found at <a href="https://github.com/DanoBuck/InteractiveMediaDesignCA1">here</a>.
 				</p>
 			</div>
 			<div class="modal-footer">
