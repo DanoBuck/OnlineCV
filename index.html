@@ -132,7 +132,7 @@
 			<div class="modal-header"style="text-align: center;">
 			  <button type="button" class="close" data-dismiss="modal">&times;</button>
 			  <h4 class="modal-title"><b>SureDatum Continued</b></h4>
-			  <img src="Images/Experience/SureDatum.JPG" alt="SureDatum Logo"/>
+			  <img src="Images/Experience/SureDatum.JPG" alt="SureDatum Logo" style="max-width:80%"/>
 			</div>
 			<div class="modal-body">
 				<p>I received a position as an intern with SureDatum after leaving the Department of Social Protection. Working here part-time as well as going to college. 
@@ -257,13 +257,15 @@
 				<div class="tab-content">
 					<div id="fourthYearProject" class="tab-pane fade in active">
 						<h2>Fourth Year Project</h2>
-						<img src="Images/Projects/IBM.png"/>
+						<img src="Images/Projects/IBM.png" alt="IBM Logo" style="max-width: 100%;"/>
 						<h3>GitHub Usability Browser Extension</h3>
 						<button type="button" class="btn btn-info" data-toggle="modal" data-target="#IBMProjectModal">More Info</button>
 					</div>
 					<div id="thirdYearProject" class="tab-pane fade">
 						<h2>Third Year Industry Project</h2>
-						<p></p>
+						<img src="Images/Experience/DSP.png" alt="The Department of Social Protection Logo" style="width:100%;max-width:80%"/>
+						<h3>Online Appointments for Public Services Cards</h3>
+						<button type="button" class="btn btn-info" data-toggle="modal" data-target="#DSPProjectModal">More Info</button>
 					</div>
 					<div id="secondYearProject" class="tab-pane fade">
 						<h2>Second Year Project</h2>
@@ -283,11 +285,81 @@
 		  <div class="modal-content">
 			<div class="modal-header"style="text-align: center;">
 			  <button type="button" class="close" data-dismiss="modal">&times;</button>
-			  <img src="Images/Projects/IBM.png" alt="IBM Logo" style="padding-top: 30px;"/>
+			  <img src="Images/Projects/IBM.png" alt="IBM Logo" style="padding-top: 30px;max-width: 100%;"/>
 			</div>
 			<div class="modal-body">
 				<h3 style="text-align: center;">GitHub Usability Browser Extension</h3>
-				<img src="Images/Projects/GitHubBrowserExtension.JPG" alt="Fourth Year Project Built on top of GitHub" style="padding-top: 30px; align: center;"/>
+				<div id="CenteredDiv" style="text-align: center;">
+					<img src="Images/Projects/GitHubBrowserExtension.JPG" alt="Fourth Year Project Built on top of GitHub" style="padding-top: 30px; max-width: 80%;"/>
+				</div>
+				<h4><b>Project Summary</b></h4>
+				<p>
+					For my fourth and final year in college I was selected to complete my project with IBM. 
+					I was assigned an IBM mentor who I worked with daily.
+					The project is a Chrome Browser Extension made up of HTML, CSS, and JavaScript and will be deployed on the Google Web Store in the future. 
+					The application will be building upon GitHub making it a more usable tool for project management with development teams.
+					I started to develop this application only quite recently so it is still in the early stages.
+				</p>
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		  </div>
+		</div>
+		<div id="clearfooter"></div>
+	</div>
+	
+		<div class="modal fade" id="DSPProjectModal" role="dialog">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+			<div class="modal-header"style="text-align: center;">
+			  <button type="button" class="close" data-dismiss="modal">&times;</button>
+			  <img src="Images/Experience/DSP.png" alt="The Department of Social Protection Logo" style="width:100%"/>
+			</div>
+			<div class="modal-body">
+				<h3 style="text-align: center;">Online Appointments for Public Services Cards</h3>
+				<div id="CenteredDiv" style="text-align: center;">
+					<img src="Images/Projects/OnlineAppointments.png" alt="The Department of Social Protection Logo" style="width:100%"/>
+				</div>
+				<h4><b>Project Summary</b></h4>
+				<p>
+					This project was built over 6 weeks in spare time after work in ASP.NET MVC C#. 
+					This was part of my college work while out in industry on internship.
+				</p>
+				</br>
+				<p>
+					The project had three main users, managers, staff members, and customers.
+					However there is another user but this user is not registered and can only see the basic views i.e. 
+					the home page which shows information about the system, office locations represented on a map, and the about page.
+				</p>
+				</br>
+				<p>
+				This project was developed on my own. It was a mock appointment system.
+				This allowed the user to make a new profile on the system. 
+				Then the customer had the ability to book an appointment of their choosing, including where and when with us, as long as this time and place
+				was not booked up already. For simplicity, I allowed the customer to pick the member of staff in which they wanted to attend an
+				appointment with. After the user confirmed the appointment, they received an email from the system with the appointment information.
+				</p>
+				</br>
+				<p>
+					The user also had the ability to amend their booking. This process was done similarly to the creation of the appointment.
+				</p>
+				</br>
+				<p>
+					Once a booking was made with a member of staff, the staff members appointment would appear on their view once they logged in.
+					The staff member had the ability to cancel the appointment as well as the customer. An email was also generated in this case.
+				</p>
+				</br>
+				<p>
+					Managers were the only users who could add a new staff member, this would also create the staff members profile and generate an email
+					to them containing their credentials. Managers also could see all their colleagues appointments in a table format. 
+					A chart would appear on the managers view showing what time is the busiest. Managers could also add new offices.
+				</p>
+				</br>
+				<p>
+					Unfortunately, my free 30 day trial with Microsoft Azure is up. Therefore my system is not being hosted anymore. 
+					However, my source code and documentation are living on GitHub. My repository can be found at <a href="https://github.com/DanoBuck/PublicServicesCardsProject"> here</a>.
+				</p>
 			</div>
 			<div class="modal-footer">
 			  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -303,24 +375,24 @@
 		<div class="container" style="padding: 30px;">
 		<div class="row">
 			<div class="col-sm-4">
-				<img style="float: left;" src="Images/CSharp.jpeg" height="150" width="150"/>
+				<img style="float: left;max-width: 100%;" src="Images/CSharp.jpeg" height="150" width="150"/>
 			</div>
 			<div class="col-sm-4">
-				<img style="float: center;" src="Images/C.png" height="150" width="250"/>
+				<img style="float: center;max-width: 100%;" src="Images/C.png" height="150" width="250"/>
 			</div>
 			<div class="col-sm-4">
-				<img style="float: right;" src="Images/Java.png" height="150" width="250"/>
+				<img style="float: right;max-width: 100%;" src="Images/Java.png" height="150" width="250"/>
 			</div>
 		</div>
 		<div class="row" style="padding-top: 100px">
 			<div class="col-sm-4">
-				<img style="float: left;" src="Images/javascript.png" height="150" width="150"/>
+				<img style="float: left;max-width: 100%;" src="Images/javascript.png" height="150" width="150"/>
 			</div>
 			<div class="col-sm-4">
-				<img style="float: center;" src="Images/AngularJS.png" height="150" width="250"/>
+				<img style="float: center;max-width: 100%;" src="Images/AngularJS.png" height="170" width="250"/>
 			</div>
 			<div class="col-sm-4">
-				<img style="float: right;" src="Images/Scala.gif" height="150" width="300"/>
+				<img style="float: right;max-width: 100%;" src="Images/Scala.gif" height="150" width="300"/>
 			</div>
 		</div>
 	</section>
