@@ -192,3 +192,9 @@ html .fixedFooter {
     background-color: #00BFFF;
 }
 
+.btn-info {
+    color: #fff;
+    background-color: #00BFFF;
+    border-color: #46b8da;
+}
+
