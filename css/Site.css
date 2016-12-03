@@ -187,3 +187,8 @@ html .fixedFooter {
 .opacity-max{opacity:0.25;filter:alpha(opacity=25);-webkit-backface-visibility:hidden}
 .opacity-min{opacity:0.75;filter:alpha(opacity=75);-webkit-backface-visibility:hidden}
 
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #fff;
+    background-color: #00BFFF;
+}
+
