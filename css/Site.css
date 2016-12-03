@@ -139,6 +139,10 @@ html .fixedFooter {
 	text-align: center;
 }
 
+.space{
+	padding-top: 7%;
+}
+
 #googleMap
 {
 	height:400px;
