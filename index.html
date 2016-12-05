@@ -29,7 +29,12 @@
 			<ul class="nav navbar-nav navbar-right">
 			  <li><a class="scrollable" href="#Experience">Experience</a></li>
 			  <li><a class="scrollable" href="#Projects">Projects</a></li>
-			  <li><a class="scrollable" href="#Languages">Languages</a></li>
+			  <li><a class="dropdown-toggle" data-toggle="dropdown" href="#">Languages <span class="caret"></span></a>
+				<ul class="dropdown-menu">
+				  <li><a class="scrollable" href="#ExcellentKnowledge">Excellent Knowledge</a></li>
+				  <li><a class="scrollable" href="#SomeKnowledge">Some Knowledge</a></li>
+				</ul>
+			  </li>
 			  <li><a class="scrollable" href="#IDES">IDES</a></li>
 			  <li><a class="scrollable" href="#Education">Education</a></li>
 			  <li><a class="scrollable" href="#Location">Location</a></li>
@@ -487,29 +492,37 @@
 	<section id="Languages">
 		<div id="clearfooter"></div>
 		<h1>Languages</h1>
-		<div class="container" style="padding: 30px;">
-		<div class="row">
-			<div class="col-sm-4">
-				<img style="float: left;max-width: 100%;" src="Images/CSharp.jpeg" height="150" width="150"/>
+		<section id="ExcellentKnowledge">
+			<div id="clearfooter"></div>
+			<h2>Excellent Knowledge</h2>
+			<div class="experience-row-padding experience-padding-32" style="margin:0 -16px">
+				<div class="experienceSection margin-bottom">
+					<img src="Images/CSharp.jpeg" alt="C Sharp Logo" height="150" width="150" class="w3-hover-opacity">
+				</div>
+				<div class="experienceSection margin-bottom">
+					<img src="Images/C.png" alt="C" height="150" width="250">
+				</div>
+				<div class="experienceSection margin-bottom">
+					<img src="Images/Java.png" height="150" width="250" alt="Java">
+				</div>
 			</div>
-			<div class="col-sm-4">
-				<img style="float: center;max-width: 100%;" src="Images/C.png" height="150" width="250"/>
+		</section>
+		
+		<section id="SomeKnowledge">
+			<div id="clearfooter"></div>
+			<h2>Some Knowledge</h2>
+			<div class="experience-row-padding experience-padding-32" style="margin:0 -16px">
+				<div class="experienceSection margin-bottom">
+					<img src="Images/javascript.png" height="150" width="150" alt="JavaScript">
+				</div>
+				<div class="experienceSection margin-bottom">
+					<img src="Images/AngularJS.png" height="170" width="250" alt="Angular">
+				</div>
+				<div class="experienceSection margin-bottom">
+					<img src="Images/Scala.gif" height="150" width="300" alt="Scala">
+				</div>
 			</div>
-			<div class="col-sm-4">
-				<img style="float: right;max-width: 100%;" src="Images/Java.png" height="150" width="250"/>
-			</div>
-		</div>
-		<div class="row" style="padding-top: 100px">
-			<div class="col-sm-4">
-				<img style="float: left;max-width: 100%;" src="Images/javascript.png" height="150" width="150"/>
-			</div>
-			<div class="col-sm-4">
-				<img style="float: center;max-width: 100%;" src="Images/AngularJS.png" height="170" width="250"/>
-			</div>
-			<div class="col-sm-4">
-				<img style="float: right;max-width: 100%;" src="Images/Scala.gif" height="150" width="300"/>
-			</div>
-		</div>
+		</section>
 	</section>
 
 	<section id="IDES">
