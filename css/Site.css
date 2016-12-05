@@ -219,7 +219,11 @@ html .fixedFooter {
     border-color: #46b8da;
 }
 
-.fa {
+.fa.fa-linkedin {
+	color: white;
+}
+
+.fa.fa-github {
 	color: white;
 }
 
