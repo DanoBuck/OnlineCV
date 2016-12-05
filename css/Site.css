@@ -86,6 +86,7 @@
     background-position: top center;
     text-align: center;
     padding: 0 20px;
+	background-image: url('../Images/Backgrounds/LightBackground.jpg');
 }
 
 #Languages {
@@ -105,15 +106,6 @@ article, aside, figure, footer, header, hgroup, nav, section {
     font-size: 100%;
     vertical-align: baseline;
     background: 0 0;
-}
-
-#IDES {
-	min-height: 60vh;
-	background-color: #00BFFF;
-	background-size: cover;
-    background-position: top center;
-    text-align: center;
-    padding: 0 20px;
 }
 
 #Education {
