@@ -545,88 +545,94 @@
 	<section id="Education">
 		<div id="clearfooter"></div>
 		<h1 style="text-align: center;">Education</h1>
-		<div class="container" ng-app="education" ng-controller="educationController">
+		<div id="ITT">
+			  <img src="Images/Education/ITT.jpg" alt="ITT" style="max-width:60%">
+				<p style="font-size: 20px;"><b>Institute of Technology Tallaght</b></p>
+				<p style="font-size: 20px;">Bachelor of Science (Honours) in Computing</p>
+				<p class="opacity" style="font-size: 20px;">2013 - 2017</p>
+		</div>
+		<div class="container" style="padding-top: 20px;" ng-app="education" ng-controller="educationController">
 			<div class="col-sm-3">
-				<button type="button" class="btn btn-lg btn-info collapsed" id="grades" data-toggle="collapse" data-target="#FourthYear">Fourth Year</button>
+			<button type="button" class="btn btn-med btn-info collapsed" id="grades" data-toggle="collapse" data-target="#FourthYear">Fourth Year</button>
 			</div>
 			<div id="FourthYear" class="collapse">
 				<div id="clearfooter"></div>
 				<h4> GPA: TBC / 4.0</h4>
-				<table class="table table-hover">
-					<thead>
-					  <tr>
-						<th>Subject</th>
-						<th>Grade</th>
-					  </tr>
-					</thead>
-					<tbody ng-repeat="fy in education.fourthYear">
-						<tr>
-							<td>{{fy.subject}}</td>
-							<td>{{fy.grade}}</td>
-						</tr>	  
-					</tbody>
-				</table>
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th>Subject</th>
+								<th>Grade</th>
+							</tr>
+						</thead>
+						<tbody ng-repeat="fy in education.fourthYear">
+							<tr>
+								<td>{{fy.subject}}</td>
+								<td>{{fy.grade}}</td>
+							</tr>	  
+						</tbody>
+					</table>
 			</div>
 			<div class="col-sm-3">
-				<button type="button" class="btn btn-lg btn-info collapsed" id="grades" data-toggle="collapse" data-target="#ThridYear">Third Year</button>
+				<button type="button" class="btn btn-med btn-info collapsed" id="grades" data-toggle="collapse" data-target="#ThridYear">Third Year</button>
 			</div>
 			<div id="ThridYear" class="collapse">
 				<div id="clearfooter"></div>
 				<h4> GPA: 3.25 / 4.0</h4>
 				<table class="table table-hover">
 					<thead>
-					  <tr>
+						<tr>
 						<th>Subject</th>
 						<th>Grade</th>
-					  </tr>
+						</tr>
 					</thead>
 					<tbody>
-					  <tr ng-repeat="ty in education.thirdYear">
-							<td>{{ty.subject}}</td>
-							<td>{{ty.grade}}</td>
-					  </tr>			  
+					<tr ng-repeat="ty in education.thirdYear">
+						<td>{{ty.subject}}</td>
+						<td>{{ty.grade}}</td>
+					</tr>			  
 					</tbody>
 				</table>
 			</div>
-			<div class="col-sm-3">
-				<button type="button" class="btn btn-lg btn-info collapsed" id="grades" data-toggle="collapse" data-target="#SecondYear">Second Year</button>
-			</div>
-			<div id="SecondYear" class="collapse">
+				<div class="col-sm-3">
+					<button type="button" class="btn btn-med btn-info collapsed" id="grades" data-toggle="collapse" data-target="#SecondYear">Second Year</button>
+				</div>
+				<div id="SecondYear" class="collapse">
 				<div id="clearfooter"></div>
 				<h4> GPA: 3.29 / 4.0</h4>
-				<table class="table table-hover">
-					<thead>
-					  <tr>
-						<th>Subject</th>
-						<th>Grade</th>
-					  </tr>
-					</thead>
-					<tbody>
-					  <tr ng-repeat="sy in education.secondYear">
-							<td>{{sy.subject}}</td>
-							<td>{{sy.grade}}</td>
-					  </tr>				  
-					</tbody>
-				</table>
-			</div>
-			<div class="col-sm-3">
-				<button type="button" class="btn btn-lg btn-info collapsed" id="grades" data-toggle="collapse" data-target="#FirstYear">First Year</button>
-			</div>
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th>Subject</th>
+								<th>Grade</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr ng-repeat="sy in education.secondYear">
+								<td>{{sy.subject}}</td>
+								<td>{{sy.grade}}</td>
+							</tr>				  
+						</tbody>
+					</table>
+				</div>
+				<div class="col-sm-3">
+					<button type="button" class="btn btn-med btn-info collapsed" id="grades" data-toggle="collapse" data-target="#FirstYear">First Year</button>
+				</div>
 			<div id="FirstYear" class="collapse">
 				<div id="clearfooter"></div>
 				<h4> GPA: 2.98 / 4.0</h4>
 				<table class="table table-hover">
 					<thead>
-					  <tr>
-						<th>Subject</th>
-						<th>Grade</th>
-					  </tr>
+						<tr>
+							<th>Subject</th>
+							<th>Grade</th>
+						</tr>
 					</thead>
 					<tbody>
-					  <tr ng-repeat="fy in education.firstYear">
+						<tr ng-repeat="fy in education.firstYear">
 							<td>{{fy.subject}}</td>
 							<td>{{fy.grade}}</td>
-					  </tr>				  
+						</tr>				  
 					</tbody>
 				</table>
 			</div>

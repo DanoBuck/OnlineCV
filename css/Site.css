@@ -185,6 +185,12 @@ html .fixedFooter {
     height: 266px;
 }
 
+#ITT {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
 .experience-padding-32{padding-top:32px!important;padding-bottom:32px!important}
 .experienceSection{float:left;width:100%}
 .experienceSection{width:99.99999%}
@@ -206,6 +212,13 @@ html .fixedFooter {
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
     color: #fff;
     background-color: #00BFFF;
+}
+
+#grades{
+    color: #fff;
+    background-color: #00BFFF;
+    border-color: #46b8da;
+	min-width: 100%;
 }
 
 .btn-info {
