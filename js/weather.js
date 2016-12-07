@@ -11,13 +11,7 @@ $(document).ready(function(){
 		success: function(data){
 			// Convert Fahrenheit to Celcius for the application
 			data.currently.apparentTemperature = calculateFahrenheitToCelcius(data.currently.apparentTemperature);
-			console.log(data.currently.apparentTemperature);
 			
-			// If value is a number such as 12.6 then we round to 13
-			if((data.currently.apparentTemperature % parseInt(data.currently.apparentTemperature)) > .5){
-				data.currently.apparentTemperature++;
-			}
-			console.log(data.currently.apparentTemperature);
 			$("#currentTemperature").append(Math.floor(data.currently.apparentTemperature));
 			$("#currentDay").append(getTheDay());
 			$("#currentDate").append(getFullDate());
