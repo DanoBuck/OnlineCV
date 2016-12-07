@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	var apiKey = 'b04dbf475994a98f5849aa6856a4596d';
+	var apiKey = '6c729b8c6a8cbe5ed57872f10dd58e6e';
 	var curl = 'https://api.forecast.io/forecast/';
 	var lati = 53.3029589;
 	var longi = -6.3644888;
@@ -20,7 +20,7 @@ $(document).ready(function(){
 			$("#currentSummary").append(data.currently.summary);
 		},
 		error: function() {
-			alert("An error occurred");
+			console.log("An error occurred");
 		}
 	});
 });
