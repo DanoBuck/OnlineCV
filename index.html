@@ -16,7 +16,7 @@
 	<link rel="shortcut icon" href="Images/code.png" type="image/x-icon" /> <!-- https://www.google.ie/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjoiObdzLzQAhVCLsAKHevlDEMQjRwIBw&url=http%3A%2F%2Fourcodeworld.com%2Fabout&psig=AFQjCNHZIq0tsmu-mLArOQ6wWw7XHdxlLw&ust=1479912192312819 -->
 </head>
 
-<body data-spy="scroll" data-target=".navbar">
+<body data-spy="scroll" data-target=".navbar" onload="startTime()">
 	<nav id="nn" class="navbar navbar-inverse navbar-fixed-top">
 	  <div class="container">
 		<div class="navbar-header">
@@ -641,9 +641,14 @@
 				<h5><i class="fa fa-mobile fa-lg" aria-hidden="true"></i> +353 85 163 0000</h5>
 				<div class="weatherContainer">
 					<div class="panel panel-default weather-panel">
-						<div class="panel-heading">Dublin, Ireland<br><small id="currentTime" class="supersmall"></small></div>
+						<div class="panel-heading">
+							<b>Dublin, Ireland</b>
+							<br>
+							<div id="currentDay"></div>
+							<div id="currentDate"></div>
+							<div id="realTimeInDublin"></div>
+						</div>
 						<div class="row">
-							<div class="col-sm-6 wi" id="currentIcon"></div>
 							<div style="text-align: center;">
 								<h1 class="temp"><span id="currentTemperature"></span><span>°C</span></h1> 
 								<small id="currentSummary"></small>

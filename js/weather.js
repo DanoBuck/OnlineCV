@@ -9,32 +9,14 @@ $(document).ready(function(){
 		url: curl + apiKey +"/"+ lati +","+ longi +"?callback=?",
 		dataType: "json",
 		success: function(data){
-			//var json = $.parseJSON(data);
-			console.log(data);
-			console.log("APP " + JSON.stringify(JSON.parse(data.currently.apparentTemperature)));
 			// Convert Fahrenheit to Celcius for the application
 			data.currently.apparentTemperature = calculateFahrenheitToCelcius(data.currently.apparentTemperature);
 			$("#currentTemperature").append(Math.floor(data.currently.apparentTemperature));
-			$("#currentTime").append(Date(data.currently.time));
-				if(data.currently.icon == 'clear-day') { $("#currentIcon").addClass("wi-day-sunny") };
-				if(data.currently.icon == 'clear-night') { $("#currentIcon").addClass("wi-night-clear") };
-				if(data.currently.icon == 'rain') { $("#currentIcon").addClass("wi-rain") };
-				if(data.currently.icon == 'snow') { $("#currentIcon").addClass("wi-snow") };
-				if(data.currently.icon == 'sleet') { $("#currentIcon").addClass("wi-day-sleet") };
-				if(data.currently.icon == 'wind') { $("#currentIcon").addClass("wi-day-windy") };
-				if(data.currently.icon == 'fog') { $("#currentIcon").addClass("wi-fog") };
-				if(data.currently.icon == 'cloudy') { $("#currentIcon").addClass("wi-cloudy") };
-				if(data.currently.icon == 'partly-cloudy-day') { $("#currentIcon").addClass("wi-day-cloudy") };
-				if(data.currently.icon == 'partly-cloudy-night') { $("#currentIcon").addClass("wi-night-cloudy") };
-				if(data.currently.icon == 'hail') { $("#currentIcon").addClass("wi-hail") };
-				if(data.currently.icon == 'thunderstorm') { $("#currentIcon").addClass("wi-thunderstorm") };
-				if(data.currently.icon == 'tornado') { $("#currentIcon").addClass("wi-meteor") };
-			$("#humidity").append(data.currently.humidity);
+			$("#currentDay").append(getTheDay());
+			$("#currentDate").append(getFullDate());
 			$("#currentWind").append(data.currently.windSpeed);
 			$("#hourlySummary").append(data.hourly.summary);
 			$("#currentSummary").append(data.currently.summary);
-			$("#daily_summary").append(data.daily.summary);
-			$("weekly").append(data.daily.data[0].apparentTemperatureMax);
 		},
 		error: function() {
 			alert("An error occurred");
@@ -47,4 +29,45 @@ function calculateFahrenheitToCelcius(fahrenheit){
 	var celcius = ((fahrenheit - 32) * 5) / 9;
 	
 	return celcius;
+}
+
+// Returns day of the week
+function getTheDay() {
+    var date = new Date();
+    var weekday = new Array(7);
+    weekday[0] = "Sunday";
+    weekday[1] = "Monday";
+    weekday[2] = "Tuesday";
+    weekday[3] = "Wednesday";
+    weekday[4] = "Thursday";
+    weekday[5] = "Friday";
+    weekday[6] = "Saturday";
+
+    var n = weekday[date.getDay()];
+    return n;
+}
+
+// Returns date as dd/MM/yyyy
+function getFullDate(){
+	var date = new Date();
+	var dateToReturnAsString = date.getDate() + "-" + (date.getMonth() + 1) + "-" + date.getFullYear();
+    return dateToReturnAsString;
+}
+
+// Starts a real time clock
+function startTime() {
+	var today = new Date();
+	var h = today.getHours();
+	var m = today.getMinutes();
+	var s = today.getSeconds();
+	m = checkTime(m);
+	s = checkTime(s);
+	document.getElementById('realTimeInDublin').innerHTML =
+	h + ":" + m + ":" + s;
+	var t = setTimeout(startTime, 500);
+}
+
+function checkTime(i) {
+	if (i < 10) {i = "0" + i}; 
+	return i;
 }
