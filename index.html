@@ -639,29 +639,22 @@
 				<h5 style="padding-top: 50px;"><i class="fa fa-map-marker" aria-hidden="true"></i> Kilnamanagh, Tallaght, Dublin 24, Ireland</h5>
 				<h5><i class="fa fa-envelope-o" aria-hidden="true"></i> DaniielBuckleyTY3@gmail.com</h5>
 				<h5><i class="fa fa-mobile fa-lg" aria-hidden="true"></i> +353 85 163 0000</h5>
-				<div class="container">
-					<div class="row">
-						<div class="col-md-3"></div>
-						<div class="col-md-3">
-							<div class="panel panel-default weather-panel">
-								<div class="panel-heading">Current weather<br><small id="currentTime" class="supersmall"></small></div>
-								<div class="row">
-									<div class="col-sm-6 wi" id="currentIcon"></div>
-									<div class="col-sm-6" style="padding: 0px;">
-										<h1 class="temp"><span id="currentTemperature"></span><span>°</span></h1>
-										<small id="currentSummary"></small>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-sm-12"><span></span><br>
-										<span>wind: </span><span id="currentWind"></span><span> mph(s)</span><br>
-										<span id="hourlySummary"></span>
-									</div>
-								</div>
+				<div class="weatherContainer">
+					<div class="panel panel-default weather-panel">
+						<div class="panel-heading">Dublin, Ireland<br><small id="currentTime" class="supersmall"></small></div>
+						<div class="row">
+							<div class="col-sm-6 wi" id="currentIcon"></div>
+							<div style="text-align: center;">
+								<h1 class="temp"><span id="currentTemperature"></span><span>°C</span></h1> 
+								<small id="currentSummary"></small>
 							</div>
 						</div>
-						<div class="col-md-3"></div>
-						<div class="col-md-3"></div>
+						<div class="row">
+							<div class="col-sm-12"><span></span><br>
+								<span>wind: </span><span id="currentWind"></span><span> mph(s)</span><br>
+								<span id="hourlySummary"></span>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -684,6 +677,7 @@
 	<script src="js/googleMap.js"></script>
 	<script src="js/email.js"></script>
 	<script src="js/subjectResults.js"></script>
+	<script src="js/weather.js"></script>
 	<script>
 		<!-- JQuery for page scrolling -->
 		$(document).ready(function(){
@@ -708,50 +702,5 @@
 	
 	</script>
 		$("#sendMessage").validate();
-	</script>
-	
-	<script>
-		    	$(document).ready(function(){
-			var apiKey = 'b04dbf475994a98f5849aa6856a4596d';
-            var curl = 'https://api.forecast.io/forecast/';
-            var lati = 53.3029589;
-            var longi = -6.3644888;
-            var data;
-			$.ajax({
-			    type: "GET",
-			    url: curl + apiKey +"/"+ lati +","+ longi +"?callback=?",
-			    dataType: "json",
-			    success: function(data){
-					//var json = $.parseJSON(data);
-					console.log(data);
-					console.log("APP " + JSON.stringify(JSON.parse(data.currently.apparentTemperature)));
-					data.currently.apparentTemperature = 5;
-					$("#currentTemperature").append(Math.floor(data.currently.apparentTemperature));
-                    $("#currentTime").append(Date(data.currently.time));
-                        if(data.currently.icon == 'clear-day') { $("#currentIcon").addClass("wi-day-sunny") };
-                        if(data.currently.icon == 'clear-night') { $("#currentIcon").addClass("wi-night-clear") };
-                        if(data.currently.icon == 'rain') { $("#currentIcon").addClass("wi-rain") };
-                        if(data.currently.icon == 'snow') { $("#currentIcon").addClass("wi-snow") };
-                        if(data.currently.icon == 'sleet') { $("#currentIcon").addClass("wi-day-sleet") };
-                        if(data.currently.icon == 'wind') { $("#currentIcon").addClass("wi-day-windy") };
-                        if(data.currently.icon == 'fog') { $("#currentIcon").addClass("wi-fog") };
-                        if(data.currently.icon == 'cloudy') { $("#currentIcon").addClass("wi-cloudy") };
-                        if(data.currently.icon == 'partly-cloudy-day') { $("#currentIcon").addClass("wi-day-cloudy") };
-                        if(data.currently.icon == 'partly-cloudy-night') { $("#currentIcon").addClass("wi-night-cloudy") };
-                        if(data.currently.icon == 'hail') { $("#currentIcon").addClass("wi-hail") };
-                        if(data.currently.icon == 'thunderstorm') { $("#currentIcon").addClass("wi-thunderstorm") };
-                        if(data.currently.icon == 'tornado') { $("#currentIcon").addClass("wi-meteor") };
-					$("#humidity").append(data.currently.humidity);
-					$("#currentWind").append(data.currently.windSpeed);
-                    $("#hourlySummary").append(data.hourly.summary);
-					$("#currentSummary").append(data.currently.summary);
-					$("#daily_summary").append(data.daily.summary);
-					$("weekly").append(data.daily.data[0].apparentTemperatureMax);
-			  	},
-			  	error: function() {
-			    	alert("An error occurred");
-			  	}
-			});
-		});
 	</script>
 </html>
