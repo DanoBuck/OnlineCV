@@ -630,6 +630,9 @@
 			<div id="FourthYear" class="collapse">
 				<div id="clearfooter"></div>
 				<h4> GPA: TBC / 4.0</h4>
+				<div class="col-xs-4">
+				  <input class="form-control" type="text" placeholder="Enter a subject here" ng-model="search">
+				</div>
 					<table class="table table-hover">
 						<thead>
 							<tr>
@@ -637,7 +640,7 @@
 								<th>Grade</th>
 							</tr>
 						</thead>
-						<tbody ng-repeat="fy in education.fourthYear">
+						<tbody ng-repeat="fy in education.fourthYear | filter:search">
 							<tr>
 								<td>{{fy.subject}}</td>
 								<td>{{fy.grade}}</td>
@@ -651,6 +654,9 @@
 			<div id="ThridYear" class="collapse">
 				<div id="clearfooter"></div>
 				<h4> GPA: 3.25 / 4.0</h4>
+				<div class="col-xs-4">
+				  <input class="form-control" type="text" placeholder="Enter a subject here" ng-model="search">
+				</div>
 				<table class="table table-hover">
 					<thead>
 						<tr>
@@ -659,7 +665,7 @@
 						</tr>
 					</thead>
 					<tbody>
-					<tr ng-repeat="ty in education.thirdYear">
+					<tr ng-repeat="ty in education.thirdYear | filter:search">
 						<td>{{ty.subject}}</td>
 						<td>{{ty.grade}}</td>
 					</tr>			  
@@ -672,6 +678,9 @@
 				<div id="SecondYear" class="collapse">
 				<div id="clearfooter"></div>
 				<h4> GPA: 3.29 / 4.0</h4>
+				<div class="col-xs-4">
+				  <input class="form-control" type="text" placeholder="Enter a subject here" ng-model="search">
+				</div>
 					<table class="table table-hover">
 						<thead>
 							<tr>
@@ -680,7 +689,7 @@
 							</tr>
 						</thead>
 						<tbody>
-							<tr ng-repeat="sy in education.secondYear">
+							<tr ng-repeat="sy in education.secondYear | filter: search">
 								<td>{{sy.subject}}</td>
 								<td>{{sy.grade}}</td>
 							</tr>				  
@@ -693,6 +702,9 @@
 			<div id="FirstYear" class="collapse">
 				<div id="clearfooter"></div>
 				<h4> GPA: 2.98 / 4.0</h4>
+				<div class="col-xs-4">
+					<input class="form-control" type="text" placeholder="Enter a subject here" ng-model="search">
+				</div>
 				<table class="table table-hover">
 					<thead>
 						<tr>
@@ -701,7 +713,7 @@
 						</tr>
 					</thead>
 					<tbody>
-						<tr ng-repeat="fy in education.firstYear">
+						<tr ng-repeat="fy in education.firstYear | filter: search">
 							<td>{{fy.subject}}</td>
 							<td>{{fy.grade}}</td>
 						</tr>				  
