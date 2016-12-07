@@ -129,6 +129,9 @@
 						<li>JavaScript</li>
 						<li>Enformed</li>
 						<li>Downloadable C.V.</li>
+						<li>Football API</li>
+						<li>Weather API</li>
+						<li>System Clock</li>
 					</ul>
 				</p>
 				</br>
@@ -160,6 +163,32 @@
 				<h3>Downloadable C.V.</h3>
 				<p>
 					A link which allows the user to download and look at my latest C.V.
+				</p>
+				<h3>Football API</h3>
+				<p>
+					I have implemented a dynamic component to the website for Latest Liverpool F.C. fixtures i.e. their next match taking place.
+					I used JavaScript and AJAX  calls to <a href="api.football-data.org"> api.football-data.org</a>. This took a bit of work to do 
+					but was quite enjoyable manipulating the JSON response from the API. The script is located in the js folder in the root  of the
+					structure. When the API is updated by the owner, the next football match for Liverpool, as I have implemented logic to work
+					this out, will appear. I am very happy about how this works. I thought of this functionality as I constantly ask people who 
+					Liverpool are playing. Now I will not need to. The date and time of the match has been formatted through my created functions.
+				</p>
+				</br>
+				<h3>Weather API</h3>
+				<p>
+					I have given the website the ability of displaying the current weather for Tallght, Dublin. This is done by making another JavaScript
+					and AJAX call to a weather API which is located at <a href="https://api.forecast.io/forecast/">https://api.forecast.io/forecast/</a>.
+					I send a GET request to this API to get the JSON response back from it. When I recieve a response I need to do more processing to it.
+					The degrees I receive back is in Fahrenheit which most Irish people don't care about. This is not the response I wanted so I have
+					implemented a function to convert this metric to Celcius. The date was also returned in the American format instead of the Irish
+					format. I also wrote a function to format this the correct way.
+				</p>
+				</br>
+				<h3>System Clock</h3>
+				<p>
+					Created a clock in JavScript which shows the user the time in real-time. When the website is open the clock will constantly be changing.
+					This shows the user the time in real-time when they are on the website. The clock is located at the bottom of the screen in the current weather
+					section.
 				</p>
 			<div>
 		</div>
