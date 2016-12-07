@@ -13,7 +13,6 @@ $(document).ready(function(){
 		  type: 'GET',
 		}).done(function(data) {
 			var count = data.fixtures.length;
-			console.log(data);
 			var firstMatchToComeForLiverpool = 0;
 			for(i = 0; i < count; i++){
 			
