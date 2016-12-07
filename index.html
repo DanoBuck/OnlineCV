@@ -631,7 +631,7 @@
 				<div id="clearfooter"></div>
 				<h4> GPA: TBC / 4.0</h4>
 				<div class="col-xs-4">
-				  <input class="form-control" type="text" placeholder="Enter a subject here" ng-model="search">
+				  <input class="form-control" type="text" placeholder="Enter a subject here" ng-model="searchFourthYear">
 				</div>
 					<table class="table table-hover">
 						<thead>
@@ -640,7 +640,7 @@
 								<th>Grade</th>
 							</tr>
 						</thead>
-						<tbody ng-repeat="fy in education.fourthYear | filter:search">
+						<tbody ng-repeat="fy in education.fourthYear | filter:searchFourthYear">
 							<tr>
 								<td>{{fy.subject}}</td>
 								<td>{{fy.grade}}</td>
@@ -655,7 +655,7 @@
 				<div id="clearfooter"></div>
 				<h4> GPA: 3.25 / 4.0</h4>
 				<div class="col-xs-4">
-				  <input class="form-control" type="text" placeholder="Enter a subject here" ng-model="search">
+				  <input class="form-control" type="text" placeholder="Enter a subject here" ng-model="searchThirdYear">
 				</div>
 				<table class="table table-hover">
 					<thead>
@@ -665,7 +665,7 @@
 						</tr>
 					</thead>
 					<tbody>
-					<tr ng-repeat="ty in education.thirdYear | filter:search">
+					<tr ng-repeat="ty in education.thirdYear | filter:searchThirdYear">
 						<td>{{ty.subject}}</td>
 						<td>{{ty.grade}}</td>
 					</tr>			  
@@ -679,7 +679,7 @@
 				<div id="clearfooter"></div>
 				<h4> GPA: 3.29 / 4.0</h4>
 				<div class="col-xs-4">
-				  <input class="form-control" type="text" placeholder="Enter a subject here" ng-model="search">
+				  <input class="form-control" type="text" placeholder="Enter a subject here" ng-model="searchSecondYear">
 				</div>
 					<table class="table table-hover">
 						<thead>
@@ -689,7 +689,7 @@
 							</tr>
 						</thead>
 						<tbody>
-							<tr ng-repeat="sy in education.secondYear | filter: search">
+							<tr ng-repeat="sy in education.secondYear | filter: searchSecondYear">
 								<td>{{sy.subject}}</td>
 								<td>{{sy.grade}}</td>
 							</tr>				  
@@ -703,7 +703,7 @@
 				<div id="clearfooter"></div>
 				<h4> GPA: 2.98 / 4.0</h4>
 				<div class="col-xs-4">
-					<input class="form-control" type="text" placeholder="Enter a subject here" ng-model="search">
+					<input class="form-control" type="text" placeholder="Enter a subject here" ng-model="searchFirstYear">
 				</div>
 				<table class="table table-hover">
 					<thead>
@@ -713,7 +713,7 @@
 						</tr>
 					</thead>
 					<tbody>
-						<tr ng-repeat="fy in education.firstYear | filter: search">
+						<tr ng-repeat="fy in education.firstYear | filter: searchFirstYear">
 							<td>{{fy.subject}}</td>
 							<td>{{fy.grade}}</td>
 						</tr>				  

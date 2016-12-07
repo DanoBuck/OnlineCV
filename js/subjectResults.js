@@ -3,7 +3,10 @@ var education = angular.module("education", []);
     education.controller("educationController", 
 		function educationController($scope) {
 			// Make the table searchable
-			$scope.search = "";
+			$scope.searchFourthYear = "";
+			$scope.searchThirdYear = "";
+			$scope.searchSecondYear = "";
+			$scope.searchFirstYear = "";
 			
 			// Array of my subjects and results added
 			$scope.education = {
