@@ -14,32 +14,52 @@ var education = angular.module("education", []);
 					{
 						id: 1,
 						subject: "Enterprise Application Development 1",
-						grade: "TBC"
+						grade: "B+"
 					},
 					{
 						id: 2,
 						subject: "Enterprise Application Architecture",
-						grade: "TBC"
+						grade: "B+"
 					},
 					{
 						id: 3,
 						subject: "Interactive Media Design 1",
-						grade: "TBC"
+						grade: "A"
 					},
 					{
 						id: 4,
 						subject: "Social Media Analysis",
-						grade: "TBC"
+						grade: "B"
 					},
 					{
 						id: 5,
 						subject: "Information Management",
-						grade: "TBC"
+						grade: "B+"
 					},
 					{
 						id: 6,
 						subject: "Project",
-						grade: "TBC"
+						grade: "A"
+					},
+					{
+						id: 7,
+						subject: "Algorithms and Computation",
+						grade: "A"
+					},
+					{
+						id: 8,
+						subject: "Enterprise Application Development 2",
+						grade: "A"
+					},
+					{
+						id: 9,
+						subject: "Computational Theory",
+						grade: "A"
+					},
+					{
+						id: 10,
+						subject: "Enterprise Database Technologies",
+						grade: "B"
 					}
 				],
 				thirdYear: [
