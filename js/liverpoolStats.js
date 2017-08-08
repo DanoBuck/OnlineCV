@@ -38,7 +38,8 @@ function getCrest(data, crest){
 		dataType: 'json',
 		type: 'GET',
 		success: function(homeData){
-			const crestUrl = homeData.crestUrl;
+			let crestUrl = homeData.crestUrl;
+			crestUrl = !crestUrl.includes("https") ? crestUrl.replace("http", "https") : crestUrl;
 			let crestDiv = document.getElementById(crest);
 			let crestPicture = document.createElement("img");
 			crestPicture.setAttribute("src", crestUrl);
