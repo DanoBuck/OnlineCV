@@ -31,6 +31,7 @@ $(document).ready(function(){
 });
 
 function getCrest(data, crest){
+	data.href = data.href.replace("http", "https");
 	$.ajax({
 		headers: { 'X-Auth-Token': 'bb162f8d16b9415a901f6394e5da790e' },
 		url: data.href,
