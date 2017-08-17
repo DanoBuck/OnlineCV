@@ -65,5 +65,5 @@ function formatDate(data){
 
 function formatTime(data){
 	const time = new Date(data);
-	return time.getHours() + ":" + time.getMinutes();
+	return time.getHours() + ":" + (time.getMinutes() == 0 ? time.getMinutes() + "0" : time.getMinutes());
 }
